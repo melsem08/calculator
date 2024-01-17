@@ -19,6 +19,23 @@ namespace Calculator
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Width = 505;
+            txtResult.Width = 238;
+        }
+
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 505;
+            txtResult.Width = 238;
+        }
+
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 765;
+            txtResult.Width = 500;
+        }
 
         private void EnterNumbers(object sender, EventArgs e)
         {
@@ -245,28 +262,13 @@ namespace Calculator
             txtResult.Text = Convert.ToString(cosh);
         }
 
+
         private void btnHypTangent_Click(object sender, EventArgs e)
         {
             double tanh = Convert.ToDouble(txtResult.Text);
             tanh = Math.Tanh(tanh);
             txtResult.Text = Convert.ToString(tanh);
         }
-       private void standardToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 505;
-            txtResult.Width = 238;
-        }
 
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 765;
-            txtResult.Width = 500;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.Width = 505;
-            txtResult.Width = 238;
-        }
     }
 }
