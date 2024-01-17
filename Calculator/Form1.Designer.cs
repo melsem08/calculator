@@ -74,13 +74,15 @@
             this.btnSqrt = new System.Windows.Forms.Button();
             this.btnLog = new System.Windows.Forms.Button();
             this.btnPI = new System.Windows.Forms.Button();
+            this.historyBox = new System.Windows.Forms.RichTextBox();
+            this.historyHeader = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBackSpace
             // 
-            this.btnBackSpace.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackSpace.Location = new System.Drawing.Point(12, 82);
+            this.btnBackSpace.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackSpace.Location = new System.Drawing.Point(313, 89);
             this.btnBackSpace.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBackSpace.Name = "btnBackSpace";
             this.btnBackSpace.Size = new System.Drawing.Size(75, 58);
@@ -92,7 +94,7 @@
             // txtResult
             // 
             this.txtResult.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResult.Location = new System.Drawing.Point(12, 31);
+            this.txtResult.Location = new System.Drawing.Point(313, 38);
             this.txtResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
@@ -103,8 +105,8 @@
             // 
             // btnClearEntry
             // 
-            this.btnClearEntry.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearEntry.Location = new System.Drawing.Point(93, 82);
+            this.btnClearEntry.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearEntry.Location = new System.Drawing.Point(394, 89);
             this.btnClearEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClearEntry.Name = "btnClearEntry";
             this.btnClearEntry.Size = new System.Drawing.Size(75, 58);
@@ -115,8 +117,8 @@
             // 
             // btnPlusMinus
             // 
-            this.btnPlusMinus.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlusMinus.Location = new System.Drawing.Point(255, 82);
+            this.btnPlusMinus.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlusMinus.Location = new System.Drawing.Point(556, 89);
             this.btnPlusMinus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlusMinus.Name = "btnPlusMinus";
             this.btnPlusMinus.Size = new System.Drawing.Size(75, 58);
@@ -127,8 +129,8 @@
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(173, 82);
+            this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(474, 89);
             this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 58);
@@ -139,8 +141,8 @@
             // 
             // btnDiv
             // 
-            this.btnDiv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiv.Location = new System.Drawing.Point(255, 146);
+            this.btnDiv.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiv.Location = new System.Drawing.Point(556, 153);
             this.btnDiv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(75, 58);
@@ -151,8 +153,8 @@
             // 
             // btn9
             // 
-            this.btn9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(173, 146);
+            this.btn9.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Location = new System.Drawing.Point(474, 153);
             this.btn9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(75, 58);
@@ -163,8 +165,8 @@
             // 
             // btn8
             // 
-            this.btn8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(93, 146);
+            this.btn8.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Location = new System.Drawing.Point(394, 153);
             this.btn8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(75, 58);
@@ -175,8 +177,8 @@
             // 
             // btn7
             // 
-            this.btn7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(12, 146);
+            this.btn7.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Location = new System.Drawing.Point(313, 153);
             this.btn7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(75, 58);
@@ -187,8 +189,8 @@
             // 
             // btnSub
             // 
-            this.btnSub.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSub.Location = new System.Drawing.Point(255, 274);
+            this.btnSub.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSub.Location = new System.Drawing.Point(556, 281);
             this.btnSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(75, 58);
@@ -199,8 +201,8 @@
             // 
             // btn3
             // 
-            this.btn3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(173, 274);
+            this.btn3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(474, 281);
             this.btn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(75, 58);
@@ -211,8 +213,8 @@
             // 
             // btn2
             // 
-            this.btn2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(93, 274);
+            this.btn2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(394, 281);
             this.btn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(75, 58);
@@ -223,8 +225,8 @@
             // 
             // btn1
             // 
-            this.btn1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(12, 274);
+            this.btn1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(313, 281);
             this.btn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 58);
@@ -235,8 +237,8 @@
             // 
             // btnMult
             // 
-            this.btnMult.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMult.Location = new System.Drawing.Point(255, 210);
+            this.btnMult.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMult.Location = new System.Drawing.Point(556, 217);
             this.btnMult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMult.Name = "btnMult";
             this.btnMult.Size = new System.Drawing.Size(75, 58);
@@ -247,8 +249,8 @@
             // 
             // btn6
             // 
-            this.btn6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(173, 210);
+            this.btn6.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Location = new System.Drawing.Point(474, 217);
             this.btn6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(75, 58);
@@ -259,8 +261,8 @@
             // 
             // btn5
             // 
-            this.btn5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(93, 210);
+            this.btn5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Location = new System.Drawing.Point(394, 217);
             this.btn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(75, 58);
@@ -271,8 +273,8 @@
             // 
             // btn4
             // 
-            this.btn4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(12, 210);
+            this.btn4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Location = new System.Drawing.Point(313, 217);
             this.btn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(75, 58);
@@ -283,8 +285,8 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(255, 338);
+            this.btnAdd.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(556, 345);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 58);
@@ -295,8 +297,8 @@
             // 
             // btnDot
             // 
-            this.btnDot.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDot.Location = new System.Drawing.Point(173, 338);
+            this.btnDot.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDot.Location = new System.Drawing.Point(474, 345);
             this.btnDot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(75, 58);
@@ -307,8 +309,8 @@
             // 
             // btnEquals
             // 
-            this.btnEquals.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(93, 338);
+            this.btnEquals.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquals.Location = new System.Drawing.Point(394, 345);
             this.btnEquals.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(75, 58);
@@ -319,8 +321,8 @@
             // 
             // btn0
             // 
-            this.btn0.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(12, 338);
+            this.btn0.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.Location = new System.Drawing.Point(313, 345);
             this.btn0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(75, 58);
@@ -337,7 +339,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(691, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1176, 28);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -354,28 +356,28 @@
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.standardToolStripMenuItem.Text = "Standard";
             this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // btnPercent
             // 
-            this.btnPercent.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPercent.Location = new System.Drawing.Point(604, 338);
+            this.btnPercent.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPercent.Location = new System.Drawing.Point(905, 345);
             this.btnPercent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPercent.Name = "btnPercent";
             this.btnPercent.Size = new System.Drawing.Size(75, 58);
@@ -386,8 +388,8 @@
             // 
             // btnOctal
             // 
-            this.btnOctal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOctal.Location = new System.Drawing.Point(523, 338);
+            this.btnOctal.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOctal.Location = new System.Drawing.Point(824, 345);
             this.btnOctal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOctal.Name = "btnOctal";
             this.btnOctal.Size = new System.Drawing.Size(75, 58);
@@ -398,8 +400,8 @@
             // 
             // btnModulo
             // 
-            this.btnModulo.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModulo.Location = new System.Drawing.Point(441, 338);
+            this.btnModulo.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModulo.Location = new System.Drawing.Point(742, 345);
             this.btnModulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModulo.Name = "btnModulo";
             this.btnModulo.Size = new System.Drawing.Size(75, 58);
@@ -410,8 +412,8 @@
             // 
             // btnExp
             // 
-            this.btnExp.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExp.Location = new System.Drawing.Point(361, 338);
+            this.btnExp.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExp.Location = new System.Drawing.Point(662, 345);
             this.btnExp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExp.Name = "btnExp";
             this.btnExp.Size = new System.Drawing.Size(75, 58);
@@ -422,8 +424,8 @@
             // 
             // btnNaturalLog
             // 
-            this.btnNaturalLog.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNaturalLog.Location = new System.Drawing.Point(604, 274);
+            this.btnNaturalLog.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNaturalLog.Location = new System.Drawing.Point(905, 281);
             this.btnNaturalLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNaturalLog.Name = "btnNaturalLog";
             this.btnNaturalLog.Size = new System.Drawing.Size(75, 58);
@@ -434,8 +436,8 @@
             // 
             // btnHex
             // 
-            this.btnHex.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHex.Location = new System.Drawing.Point(523, 274);
+            this.btnHex.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHex.Location = new System.Drawing.Point(824, 281);
             this.btnHex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHex.Name = "btnHex";
             this.btnHex.Size = new System.Drawing.Size(75, 58);
@@ -446,8 +448,8 @@
             // 
             // btnTangent
             // 
-            this.btnTangent.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTangent.Location = new System.Drawing.Point(441, 274);
+            this.btnTangent.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTangent.Location = new System.Drawing.Point(742, 281);
             this.btnTangent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTangent.Name = "btnTangent";
             this.btnTangent.Size = new System.Drawing.Size(75, 58);
@@ -458,8 +460,8 @@
             // 
             // btnHypTangent
             // 
-            this.btnHypTangent.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHypTangent.Location = new System.Drawing.Point(361, 274);
+            this.btnHypTangent.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHypTangent.Location = new System.Drawing.Point(662, 281);
             this.btnHypTangent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHypTangent.Name = "btnHypTangent";
             this.btnHypTangent.Size = new System.Drawing.Size(75, 58);
@@ -470,8 +472,8 @@
             // 
             // btnInverse
             // 
-            this.btnInverse.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInverse.Location = new System.Drawing.Point(604, 210);
+            this.btnInverse.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInverse.Location = new System.Drawing.Point(905, 217);
             this.btnInverse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInverse.Name = "btnInverse";
             this.btnInverse.Size = new System.Drawing.Size(75, 58);
@@ -482,8 +484,8 @@
             // 
             // btnBinary
             // 
-            this.btnBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBinary.Location = new System.Drawing.Point(523, 210);
+            this.btnBinary.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBinary.Location = new System.Drawing.Point(824, 217);
             this.btnBinary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBinary.Name = "btnBinary";
             this.btnBinary.Size = new System.Drawing.Size(75, 58);
@@ -494,8 +496,8 @@
             // 
             // btnCosine
             // 
-            this.btnCosine.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCosine.Location = new System.Drawing.Point(441, 210);
+            this.btnCosine.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCosine.Location = new System.Drawing.Point(742, 217);
             this.btnCosine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCosine.Name = "btnCosine";
             this.btnCosine.Size = new System.Drawing.Size(75, 58);
@@ -506,8 +508,8 @@
             // 
             // btnHypCosine
             // 
-            this.btnHypCosine.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHypCosine.Location = new System.Drawing.Point(361, 210);
+            this.btnHypCosine.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHypCosine.Location = new System.Drawing.Point(662, 217);
             this.btnHypCosine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHypCosine.Name = "btnHypCosine";
             this.btnHypCosine.Size = new System.Drawing.Size(75, 58);
@@ -518,8 +520,8 @@
             // 
             // btnCube
             // 
-            this.btnCube.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCube.Location = new System.Drawing.Point(604, 146);
+            this.btnCube.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCube.Location = new System.Drawing.Point(905, 153);
             this.btnCube.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCube.Name = "btnCube";
             this.btnCube.Size = new System.Drawing.Size(75, 58);
@@ -530,8 +532,8 @@
             // 
             // btnDecimal
             // 
-            this.btnDecimal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDecimal.Location = new System.Drawing.Point(523, 146);
+            this.btnDecimal.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecimal.Location = new System.Drawing.Point(824, 153);
             this.btnDecimal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(75, 58);
@@ -542,8 +544,8 @@
             // 
             // btnSine
             // 
-            this.btnSine.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSine.Location = new System.Drawing.Point(441, 146);
+            this.btnSine.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSine.Location = new System.Drawing.Point(742, 153);
             this.btnSine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSine.Name = "btnSine";
             this.btnSine.Size = new System.Drawing.Size(75, 58);
@@ -554,8 +556,8 @@
             // 
             // btnHypSine
             // 
-            this.btnHypSine.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHypSine.Location = new System.Drawing.Point(361, 146);
+            this.btnHypSine.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHypSine.Location = new System.Drawing.Point(662, 153);
             this.btnHypSine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHypSine.Name = "btnHypSine";
             this.btnHypSine.Size = new System.Drawing.Size(75, 58);
@@ -566,8 +568,8 @@
             // 
             // btnSquare
             // 
-            this.btnSquare.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSquare.Location = new System.Drawing.Point(604, 82);
+            this.btnSquare.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSquare.Location = new System.Drawing.Point(905, 89);
             this.btnSquare.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSquare.Name = "btnSquare";
             this.btnSquare.Size = new System.Drawing.Size(75, 58);
@@ -578,8 +580,8 @@
             // 
             // btnSqrt
             // 
-            this.btnSqrt.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSqrt.Location = new System.Drawing.Point(523, 82);
+            this.btnSqrt.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSqrt.Location = new System.Drawing.Point(824, 89);
             this.btnSqrt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSqrt.Name = "btnSqrt";
             this.btnSqrt.Size = new System.Drawing.Size(75, 58);
@@ -590,8 +592,8 @@
             // 
             // btnLog
             // 
-            this.btnLog.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(441, 82);
+            this.btnLog.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(742, 89);
             this.btnLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLog.Name = "btnLog";
             this.btnLog.Size = new System.Drawing.Size(75, 58);
@@ -602,8 +604,8 @@
             // 
             // btnPI
             // 
-            this.btnPI.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPI.Location = new System.Drawing.Point(361, 82);
+            this.btnPI.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPI.Location = new System.Drawing.Point(662, 89);
             this.btnPI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPI.Name = "btnPI";
             this.btnPI.Size = new System.Drawing.Size(75, 58);
@@ -612,11 +614,32 @@
             this.btnPI.UseVisualStyleBackColor = true;
             this.btnPI.Click += new System.EventHandler(this.btnPI_Click);
             // 
+            // historyBox
+            // 
+            this.historyBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyBox.Location = new System.Drawing.Point(21, 89);
+            this.historyBox.Name = "historyBox";
+            this.historyBox.Size = new System.Drawing.Size(276, 313);
+            this.historyBox.TabIndex = 42;
+            this.historyBox.Text = "History record is empty";
+            // 
+            // historyHeader
+            // 
+            this.historyHeader.AutoSize = true;
+            this.historyHeader.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyHeader.Location = new System.Drawing.Point(104, 46);
+            this.historyHeader.Name = "historyHeader";
+            this.historyHeader.Size = new System.Drawing.Size(85, 25);
+            this.historyHeader.TabIndex = 43;
+            this.historyHeader.Text = "History";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 405);
+            this.ClientSize = new System.Drawing.Size(1176, 418);
+            this.Controls.Add(this.historyHeader);
+            this.Controls.Add(this.historyBox);
             this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.btnOctal);
             this.Controls.Add(this.btnModulo);
@@ -717,6 +740,8 @@
         private System.Windows.Forms.Button btnSqrt;
         private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.Button btnPI;
+        private System.Windows.Forms.RichTextBox historyBox;
+        private System.Windows.Forms.Label historyHeader;
     }
 }
 

@@ -14,6 +14,7 @@ namespace Calculator
     {
         double enterFirstValue, enterSecondValue;
         string enterOperator;
+        Queue<string> operationsHistory = new Queue<string>();
         public Form1()
         {
             InitializeComponent();
@@ -51,7 +52,11 @@ namespace Calculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            enterSecondValue = Convert.ToDouble(txtResult.Text);
+            double parseResult = 0;
+            if (Double.TryParse(txtResult.Text, out parseResult))
+            {
+                enterSecondValue = Convert.ToDouble(txtResult.Text);
+            }
 
             switch (enterOperator)
             {
@@ -76,6 +81,15 @@ namespace Calculator
                 default:
                     break;
             }
+
+            if (operationsHistory.Count >= 10)
+                operationsHistory.Dequeue();
+
+            string newOperationsRecord = $"{enterFirstValue} {enterOperator} {enterSecondValue} = {txtResult.Text}";
+            operationsHistory.Enqueue(newOperationsRecord);
+
+            string historyRecord = string.Join(Environment.NewLine, operationsHistory.Reverse());
+            historyBox.Text = historyRecord;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -86,14 +100,10 @@ namespace Calculator
         private void btnClearEntry_Click(object sender, EventArgs e)
         {
             txtResult.Text = "0";
-
-            string firstValue, secondValue;
-
-            firstValue = Convert.ToString(enterFirstValue);
-            secondValue = Convert.ToString(enterSecondValue);
-
-            firstValue = "";
-            secondValue = "";
+            enterFirstValue = 0;
+            enterSecondValue = 0;
+            operationsHistory.Clear();
+            historyBox.Text = "History record is empty";
         }
 
         private void btnPlusMinus_Click(object sender, EventArgs e)
@@ -113,18 +123,6 @@ namespace Calculator
             {
                 txtResult.Text = "0";
             }
-        }
-
-        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 270; //818
-            txtResult.Width = 238;
-        }
-
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 535; //818
-            txtResult.Width = 500;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -253,12 +251,22 @@ namespace Calculator
             tanh = Math.Tanh(tanh);
             txtResult.Text = Convert.ToString(tanh);
         }
+       private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 505;
+            txtResult.Width = 238;
+        }
+
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 765;
+            txtResult.Width = 500;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Width = 270; //818
+            this.Width = 505;
             txtResult.Width = 238;
-            
         }
     }
 }
